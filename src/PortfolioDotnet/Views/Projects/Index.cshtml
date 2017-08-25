@@ -13,14 +13,14 @@
         <div class="card">
             <div class="card-content">
                 <span class="card-title">
-                    <a href="@project.html_url">@project.name</a>
+                    <a target="_blank" href="@project.html_url">@project.name</a>
                 </span>
 
                 <p>Written primarily in @project.language</p>
                 <h5>@project.description</h5>
                 @if(@project.homepage != "")
                 {
-                    <a href="@project.homepage">Deployed site viewable here</a>
+                    <a target="_blank" href="@project.homepage">Deployed site viewable here</a>
                 }
             </div>
             <div class="card-action">
