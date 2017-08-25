@@ -14,6 +14,10 @@ html, body, .container {
     background-color: #F33535;
 }
 
+nav {
+    height: 65px;
+}
+
 .projects-header {
     margin: 50px 0px 50px 0px;
 }
@@ -30,4 +34,13 @@ html, body, .container {
     font-family: josefin slab;
     font-size: 7em;
     font-weight: bold;
+}
+
+.background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  margin-top: 65px;
 }
