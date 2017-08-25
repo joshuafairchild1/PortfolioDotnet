@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using PortfolioDotnet.Models;
+using System.Collections.Generic;
 
 namespace PortfolioDotnet.Controllers
 {
@@ -6,7 +8,9 @@ namespace PortfolioDotnet.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            List<Project> repos = Project.GetTopStarredRepos();
+
+            return View(repos);
         }
     }
 }

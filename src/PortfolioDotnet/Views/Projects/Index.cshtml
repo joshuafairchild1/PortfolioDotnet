@@ -1,6 +1,20 @@
-﻿@{
+﻿@using PortfolioDotnet.Models 
+@model IEnumerable<Project>
+@{
     ViewBag.Title = "Projects";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <p>Projects works!</p>
+
+<div>
+    @foreach(var project in Model)
+    {
+        <p><a href="@project.html_url">@project.name</a></p>
+        <p>@project.language</p>
+        <p>@project.description</p>
+        <p>Stars: @project.stargazers_count</p>
+        <p>Forks: @project.forks</p>
+
+    }
+</div>

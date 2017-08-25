@@ -1,3 +1,4 @@
 
 .vs
 project.lock.json
+EnvironmentVariables.cs
