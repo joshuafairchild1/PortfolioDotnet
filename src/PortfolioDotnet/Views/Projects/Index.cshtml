@@ -5,16 +5,33 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<p>Projects works!</p>
+<h4 class="projects-header center-align">Here is a selection of my most starred projects on GitHub</h4>
 
 <div>
     @foreach(var project in Model)
     {
-        <p><a href="@project.html_url">@project.name</a></p>
-        <p>@project.language</p>
-        <p>@project.description</p>
-        <p>Stars: @project.stargazers_count</p>
-        <p>Forks: @project.forks</p>
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title">
+                    <a href="@project.html_url">@project.name</a>
+                </span>
+
+                <p>Written primarily in @project.language</p>
+                <h5>@project.description</h5>
+                @if(@project.homepage != "")
+                {
+                    <a href="@project.homepage">Deployed site viewable here</a>
+                }
+            </div>
+            <div class="card-action">
+                <div class="chip">
+                    Stars: @project.stargazers_count
+                </div>
+                <div class="chip">
+                    Forks: @project.forks
+                </div>
+            </div>
+        </div>
 
     }
 </div>

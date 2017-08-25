@@ -1,6 +1,33 @@
 ﻿body {
-    background-color: #f7f7f7;
+    background-color: #D8E9F0;
 }
+
+html, body, .container {
+    height: 100%;
+}
+
 .brand-logo {
     margin-left: 5vw;
+}
+
+.nav-wrapper {
+    background-color: #F33535;
+}
+
+.projects-header {
+    margin: 50px 0px 50px 0px;
+}
+
+.landing-container {
+    margin-top: 15vh;
+    height: 50vh;
+    text-align: center;
+    margin-left: -10vw;
+    margin-right: -10vw;
+}
+
+#landing-name {
+    font-family: josefin slab;
+    font-size: 7em;
+    font-weight: bold;
 }

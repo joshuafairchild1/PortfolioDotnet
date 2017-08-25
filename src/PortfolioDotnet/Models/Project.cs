@@ -15,6 +15,7 @@ namespace PortfolioDotnet.Models
         public string language { get; set; }
         public int stargazers_count { get; set; }
         public string description { get; set; }
+        public string homepage{ get; set; }
 
         private static RestClient Client = new RestClient("https://api.github.com");
 
