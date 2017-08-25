@@ -6,8 +6,8 @@
     <title>@ViewBag.Title</title>
     <!-- MATERIALIZE CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
-    <!-- STYLES.css -->
-    <link rel="stylesheet" href="~/css/styles.css" type="text/css" />
+    <!-- SITE.CSS -->
+    <link rel="stylesheet" href="~/css/site.css" type="text/css" />
 
     <!-- JQUERY -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
@@ -16,6 +16,15 @@
 
 </head>
 <body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="/Home/Index" class="brand-logo">Home</a>
+            <ul class="right">
+                <li><a href="/About/Index">About</a></li>
+                <li><a href="/Projects/Index">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
     <div class="container">
         @RenderBody()
     </div>
