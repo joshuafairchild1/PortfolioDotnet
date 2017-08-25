@@ -4,14 +4,13 @@
 
 ## Description
 
-Description coming soon
+This website is meant to act as a portfolio of my work (as well as demonstrating API calls using RestSharp). The application contains a landing page, an "About me" page, as well as a project section that displays a few of my projects. These projects are gathered by requesting my most-starred repositories from the GitHub API.
 
 ## Prerequisites
 
 You will need the following software properly installed on your computer.
 
 * [Visual Studio 2015](https://www.visualstudio.com/vs/older-downloads/)
-<!-- * [Microsoft SQL Server](https://www.microsoft.com/en-in/sql-server/sql-server-downloads) -->
 
 ## Installation/Database Setup
 
@@ -19,15 +18,22 @@ You will need the following software properly installed on your computer.
 
   `$ git clone https://github.com/joshuafairchild1/PortfolioDotnet`
 
-<!-- * Open MS SQL Server and establish a local connection. -->
 
-* In Visual Studio, open and build the project.
+* In Visual Studio, open `PortfolioDotnet.sln` and create a file called `EnvironmentVariables` within the `Models` directory. Add the following code:
 
-<!-- * Run the following commands in PowerShell to generate the database: -->
+  ```
+  namespace PortfolioDotnet.Models
+  {
+      public class EnvironmentVariables
+      {
+          public static string GitHubUserAgent = "joshuafairchild1";
+      }
+  }
 
-  <!-- `$ cd .\src\MrFixIt\` -->
+  /* note that the string value can be substituted for a different GitHub
+  username to view their repositories instead of mine */
 
-  <!-- `$ dotnet ef database update 20170818192949_FixWorkerModelTypo` -->
+  ```
 
 * You can now view the application by pressing Ctrl + F5 in Visual Studio, you will be navigated to the application in your web browser.
 
@@ -36,10 +42,10 @@ You will need the following software properly installed on your computer.
 
 * C#
 * ASP.NET Core MVC
-<!-- * Microsoft SQL Server -->
-<!-- * Identity (C# framework) -->
 * CSS
-* Materialize (CSS library)
+* [RestSharp](http://restsharp.org/)
+* [Materialize](http://materializecss.com/)
+* [Particles.js](https://github.com/VincentGarreau/particles.js/)
 
 ## License
 

@@ -18,9 +18,9 @@
 
                 <p>Written primarily in @project.language</p>
                 <h5>@project.description</h5>
-                @if(@project.homepage != "")
+                @if(@project.homepage is string && @project.homepage != "" )
                 {
-                    <a target="_blank" href="@project.homepage">Deployed site viewable here</a>
+                    <a target="blank" href="@project.homepage">Deployed site viewable here</a>
                 }
             </div>
             <div class="card-action">
